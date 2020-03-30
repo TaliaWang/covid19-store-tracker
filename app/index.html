@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>starter react</title>
+    <meta name="description" content="A cool thing made with Glitch" />
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://glitch.com/edit/favicon-app.ico"
+      type="image/x-icon"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!--     Fonts and icons   -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body style = "background-color: #E0FFFF">
+    <!--FIREBASE SETUP-->
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-analytics.js"></script>
+    <script>
+      var config = {
+        apiKey: "AIzaSyAd3Fa-IDsWR3eGP7w1tIkviGPXAgEGrdc",
+        authDomain: "store-people-tracker.firebaseapp.com",
+        databaseURL: "https://store-people-tracker.firebaseio.com",
+        projectId: "store-people-tracker",
+        storageBucket: "store-people-tracker.appspot.com",
+        messagingSenderId: "674037245560",
+        appId: "1:674037245560:web:a0f58ad92c567f639faf8d",
+        measurementId: "G-ZTXHLBJTKJ"
+      };
+      if (!firebase.apps.length) {
+        firebase.initializeApp(config);
+      }
+      firebase.analytics();
+    </script>
+
+    <div id="main">
+      <!-- the hello world app will be in here! -->
+    </div>
+
+    
+
+    <!-- glitch button and style -->
+     <!-- Now UI Kit -->
+    <!--<script src="assets/css/bootstrap.min.css"></script>
+    <script src="assets/css/now-ui-kit.css"></script>
+    <script src="assets/demo/demo.css"></script> -->
+    
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script
+      src="https://button.glitch.me/button.js"
+      data-style="glitch"
+    ></script>
+
+    <!-- bundle all the scripts! thanks to webpack -->
+    <script type="text/javascript" src="/bundle.js"></script>
+
+   
+  </body>
+</html>
